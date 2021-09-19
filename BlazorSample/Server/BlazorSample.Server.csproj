@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="5.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Client\BlazorSample.Client.csproj" />
+    <ProjectReference Include="..\Infrastructure\Converter\BlazorSample.Conveter.csproj" />
+    <ProjectReference Include="..\Shared\BlazorSample.Shared.csproj" />
+  </ItemGroup>
+
+
+</Project>

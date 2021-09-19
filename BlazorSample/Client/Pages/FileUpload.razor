@@ -1,0 +1,14 @@
+﻿@page "/fileupload"
+@using  BlazorSample.Shared
+@inject HttpClient Http
+
+<InputFile OnChange="@LoadFiles" />
+
+@code {
+    private async Task LoadFiles(InputFileChangeEventArgs e)
+    {
+        var buffer = new byte[e.File.Size];
+        await e.File.OpenReadStream().ReadAsync(buffer);
+        await Http.PostAsJsonAsync("upload", new GenericFile { FileContent = buffer, Name = e.File.Name });
+    }
+}
