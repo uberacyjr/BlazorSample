@@ -8,6 +8,6 @@ Examples you can find here:
 - [x] Csv converter using CsvHelper
 - [ ] Local storage
 - [ ] CRUD
-- [ ] Component tests using BUnit
+- [ ] Component unit testing using BUnit
 - [ ] Virtualization
 - [ ] Security
