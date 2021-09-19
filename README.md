@@ -3,9 +3,11 @@
 The objective of this project is to provide various examples of code using Blazor.
 
 Examples you can find here: 
-- [x] File Upload
-- [ ] File Download
-- [ ] Browser Local Storage
+- [x] File upload
+- [ ] File download
+- [x] Csv converter using CsvHelper
+- [ ] Local storage
 - [ ] CRUD
+- [ ] Component tests using BUnit
 - [ ] Virtualization
 - [ ] Security
