@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Client\BlazorSample.Client.csproj" />
-    <ProjectReference Include="..\Infrastructure\Converter\BlazorSample.Conveter.csproj" />
+    <ProjectReference Include="..\Infrastructure\BlazorSample.Infrasctructure.csproj" />
     <ProjectReference Include="..\Shared\BlazorSample.Shared.csproj" />
   </ItemGroup>
 

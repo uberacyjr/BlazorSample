@@ -1,0 +1,40 @@
+﻿@page "/localstorage"
+@using BlazorSample.Client.LocalStorage.Services
+@inject ILocalStorageService LocalStorageService
+<div class="row">
+    <div class="col-md-4">
+        <input class="form-control" id="Name" @bind="Name" />
+    </div>
+    <div class="col-md-8">
+        <button class="btn btn-primary" @onclick="Save">Save</button>
+        <button class="btn btn-primary" @onclick="Remove">Remove</button>
+        <button class="btn btn-primary" @onclick="Clear">Clear Local Storage</button>
+    </div>
+</div>
+
+@code {
+    protected string Name { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Name = await LocalStorageService.GetAsync<string>("LocalStorageName");
+
+    }
+
+    protected async Task Save()
+    {
+        await LocalStorageService.SetAsync<string>("LocalStorageName", Name);
+    }
+
+    protected async Task Remove()
+    {
+        await LocalStorageService.RemoveAsync("LocalStorageName");
+        Name = null;
+    }
+
+    protected async Task Clear()
+    {
+        await LocalStorageService.ClearAsync();
+        Name = null;
+    }
+}
