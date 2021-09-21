@@ -1,4 +1,4 @@
-# BlazorSample
+# Blazor Sample
 
 The objective of this project is to provide various examples of code using Blazor.
 
