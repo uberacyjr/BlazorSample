@@ -6,7 +6,7 @@ Examples you can find here:
 - [x] File upload
 - [ ] File download
 - [x] Csv converter using CsvHelper
-- [ ] Local storage
+- [x] Local storage
 - [ ] CRUD
 - [ ] Component testing using BUnit
 - [ ] Virtualization
